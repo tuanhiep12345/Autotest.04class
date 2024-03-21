@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite">
+<test name="Run parameter chrome test">
+	<parameter name="browerParaName" value="chrome"></parameter>
+	<classes>
+	<class name="automation.testsuite.AddClientsTest"/>
+	</classes>	
+	</test> 
+	
+	<test name="Run parameter firefox test">
+	<parameter name="browerParaName" value="firefox"></parameter>
+	<classes>
+	<class name="automation.testsuite.AddClientsTest"/>
+	</classes>	
+	</test> 
+	
+</suite> <!-- Suite -->

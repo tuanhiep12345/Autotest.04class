@@ -26,8 +26,8 @@ public class Project_Day19 extends CommonBase {
 	{
 		LoginPageFactory login = new LoginPageFactory(driver);
 		login.loginFunction("admin@demo.com", "riseDemo");
-		Projects_Factory client = new Projects_Factory(driver);
-		client.AddClients("Abshire-Swaniawski");
+		Projects_Factory project = new Projects_Factory(driver);
+		project.AddProjects("Abshire-Swaniawski");
 		Thread.sleep(3000);
 		assertTrue(driver.findElement(By.xpath("//a[text()='Abshire-Swaniawski']")).isDisplayed());
 	}
@@ -37,8 +37,8 @@ public class Project_Day19 extends CommonBase {
 	{
 		LoginPageFactory login = new LoginPageFactory(driver);
 		login.loginFunction("admin@demo.com", "riseDemo");
-		Projects_Factory client = new Projects_Factory(driver);
-		client.AddClients("$4,000.00");
+		Projects_Factory project = new Projects_Factory(driver);
+		project.AddProjects("$4,000.00");
 		Thread.sleep(3000);
 		assertTrue(driver.findElement(By.xpath("//a[text()='Koch PLC']")).isDisplayed());
 	}
@@ -48,8 +48,8 @@ public class Project_Day19 extends CommonBase {
 	{
 		LoginPageFactory login = new LoginPageFactory(driver);
 		login.loginFunction("admin@demo.com", "riseDemo");
-		Projects_Factory client = new Projects_Factory(driver);
-		client.AddClients("01-04-2024");
+		Projects_Factory project = new Projects_Factory(driver);
+		project.AddProjects("01-04-2024");
 		Thread.sleep(3000);
 		assertTrue(driver.findElement(By.xpath("//a[text()='Alta Cassin']")).isDisplayed());
 	}
@@ -59,8 +59,8 @@ public class Project_Day19 extends CommonBase {
 	{
 		LoginPageFactory login = new LoginPageFactory(driver);
 		login.loginFunction("admin@demo.com", "riseDemo");
-		Projects_Factory client = new Projects_Factory(driver);
-		client.AddClients("Open");
+		Projects_Factory project = new Projects_Factory(driver);
+		project.AddProjects("Open");
 		Thread.sleep(3000);
 		assertTrue(driver.findElement(By.xpath("//span[text()='02-09-2023']")).isDisplayed());
 	}
@@ -69,8 +69,8 @@ public class Project_Day19 extends CommonBase {
 	{
 		LoginPageFactory login = new LoginPageFactory(driver);
 		login.loginFunction("admin@demo.com", "riseDemo");
-		Projects_Factory client = new Projects_Factory(driver);
-		client.AddClients("Title");
+		Projects_Factory project = new Projects_Factory(driver);
+		project.AddProjects("Title");
 		Thread.sleep(3000);
 		assertTrue(driver.findElement(By.xpath("//td[text()='No record found.']")).isDisplayed());
 		
